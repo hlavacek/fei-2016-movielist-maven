@@ -16,6 +16,7 @@ public class MovieList {
 			port(Integer.parseInt(args[0]));
 		}
 		get("/hello", (req, res) -> "Hello World<br/>Save private ryan");
+		get("/", (req, res) -> "Index");
 		
 		LOG.info("App started");
 	}
