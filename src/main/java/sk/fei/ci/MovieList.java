@@ -11,7 +11,7 @@ public class MovieList {
 
 	public static void main(String[] args) {
 		port(getHerokuAssignedPort());
-		get("/hello", (req, res) -> "Hello World<br/>Save private ryan");
+		get("/hello", (req, res) -> "Hello World<br/>Save private Ryan");
 		get("/", (req, res) -> "Index");
 
 		LOG.info("App started");
