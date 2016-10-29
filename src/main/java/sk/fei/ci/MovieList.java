@@ -11,7 +11,8 @@ public class MovieList {
 
 	public static void main(String[] args) {
 		port(getHerokuAssignedPort());
-		get("/hello", (req, res) -> "Hello World<br/>Save private Ryan");
+		Movies movies = new Movies();
+		get("/hello", (req, res) -> "Movies<br/>" + movies.stream().reduce("", (o, s) -> o + "<br/>" + s));
 		get("/", (req, res) -> "Index");
 
 		LOG.info("App started");
