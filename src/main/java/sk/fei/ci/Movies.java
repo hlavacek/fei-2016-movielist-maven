@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Movies extends ArrayList<String>{
 
 	public Movies() {
-		add("Save private ryan");
+		add("Save private Ryan");
 		add("Lord of the Rings");
 	}
 	
